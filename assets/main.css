@@ -1,6 +1,7 @@
 /* css import */
 @import url('./css/start.css');
 @import url('./css/menu.css');
+@import url('./css/common.css');
 
 html {
 	font-size:62.5%;

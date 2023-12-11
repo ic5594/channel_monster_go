@@ -8,7 +8,7 @@
   background-repeat: round;
   display: flex;
   align-items: flex-end;
-  
+  justify-content: space-around;
 }
 .item-02-P8y {
   display: flex;
@@ -44,6 +44,8 @@
   justify-content : center;
 }
 .objects-Vx1 {
+  width: 12rem;
+  height: 3rem;
   position: relative;
   overflow: hidden;
   font-size: 2rem;
@@ -57,14 +59,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-image: url('../images/vector-EVK.png'); */
+  background-image: url('../images/text1.png');
 }
 .group-GLV {
-  width: 10rem;
+  width: 12rem;
   height: 10rem;
   position: relative;
   object-fit: contain;
   vertical-align: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/monster.png');
 }
 .monster {
   z-index: 1;
