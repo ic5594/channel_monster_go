@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>ChannelMonGo</title>
+  </head>
+  <body>
+    <div class="item-01-P8y">
+       <div class="thema battle"></div>
+        <div class="play_area">
+                <div class="text3"></div>
+                <div class="monster_battle"></div>
+        </div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="./KeyCode.js?1"></script>
+<script type="text/javascript" src="./js/index.js?1"></script>
+<script>
+    var focIndex = 0
+    var maxIndex = 3
+    var keyHandler = function(event) {
+        console.log('keycode', event.keyCode)
+        if (event.keyCode == KeyCode.KEY_BACK || event.keyCode == KeyCode.WINDOW_KEY_BACK) {
+            window.location.href = './menu.html'
+        }
+        event.stopPropagation();
+    }
+    window.document.onkeydown = keyHandler
+    init(keyHandler)
+</script>

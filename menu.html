@@ -22,10 +22,19 @@
 <script>
     var focIndex = 0
     var maxIndex = 3
+
     var keyHandler = function(event) {
-        console.log('keycode', event.keyCode)
         if (event.keyCode == KeyCode.KEY_CONFIRM) {
-            
+            window.sessionStorage.setItem('menuIndex', focIndex)
+            if (focIndex == 0) {
+                window.location.href = './training.html'
+            } else if (focIndex == 1) {
+                window.location.href = './travel.html'
+            } else if (focIndex == 2) {
+                window.location.href = './battle.html'
+            } else {
+                window.location.href = './shop.html'
+            }
         } else if (event.keyCode == KeyCode.KEY_RIGHT) {
             if (focIndex >= maxIndex) { 
                 focIndex = maxIndex
@@ -46,7 +55,7 @@
     }
     window.document.onkeydown = keyHandler
     init(keyHandler)
-    
+
     var setFocus = function(index) {
         for(var a = 0; a < 4; a++) {
             if(index == a) {
