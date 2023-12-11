@@ -4,8 +4,9 @@ var KeyCode = {
     KEY_LEFT: 37,  // 좌 - 방향키(좌)
     KEY_RIGHT: 39,  // 우 - 방향키(우)
     KEY_CONFIRM: 13,  // 확인 - Enter
-
-    KEY_BACK: 8,   // 이전 - Backspace
+   
+    KEY_BACK: 461,
+    WINDOW_KEY_BACK: 8, // 이전 - Backspace
     KEY_EXIT: 27,  // 종료 - Esc
     KEY_DEL: 46,  // 지우기 - Delete
 
