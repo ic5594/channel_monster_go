@@ -1,0 +1,71 @@
+
+.item-01-P8y {
+  width: 100%;
+  height: 108rem;
+  position: relative;
+  overflow: hidden;
+}
+.item-01-P8y .back-5vu {
+  width: 192rem;
+  height: 108rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  vertical-align: top;
+}
+.item-01-P8y .item-2023-11-29230308-1-iiy {
+  width: 227.4rem;
+  height: 115.0089rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  vertical-align: top;
+}
+.item-01-P8y .okbtn-MG9 {
+  box-sizing: border-box;
+  padding: 3rem 6.5rem;
+  width: 66.8rem;
+  height: 10rem;
+  position: absolute;
+  left: 62.4rem;
+  top: 93rem;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.1111111111;
+  color: #ffffff;
+  font-family: NanumGothic, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.8000000119);
+  border-radius: 6rem;
+}
+.item-01-P8y .objects-Vx1 {
+  width: 30rem;
+  height: 9rem;
+  position: absolute;
+  left: 152.5rem;
+  top: 69.2rem;
+  overflow: hidden;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.1111111111;
+  font-family: NanumGothic, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/vector-EVK.png');
+}
+.item-01-P8y .group-GLV {
+  width: 27.7013rem;
+  height: 22.1402rem;
+  position: absolute;
+  left: 154.8rem;
+  top: 80.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}

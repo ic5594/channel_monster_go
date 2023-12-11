@@ -1,0 +1,51 @@
+.menu_area {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.menu_ch0{
+    width: 18rem;
+    height: 18rem;
+    background-image: url('../images/training.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.menu_ch0.foc{
+    background-image: url('../images/training.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu_ch1{
+    width: 18rem;
+    height: 18rem;
+    background-image: url('../images/travel.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.menu_ch1.foc{
+    background-image: url('../images/travel_foc.png');
+}
+
+.menu_ch2{
+    width: 18rem;
+    height: 18rem;
+    background-image: url('../images/battle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.menu_ch2.foc{
+    background-image: url('../images/battle_foc.png');
+}
+
+.menu_ch3{
+    width: 18rem;
+    height: 18rem;
+    background-image: url('../images/shop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.menu_ch3.foc{
+    background-image: url('../images/shop_foc.png');
+}
