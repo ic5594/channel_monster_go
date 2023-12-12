@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="shortcut icon" href="../public/favicon.ico">
     <title>ChannelMonGo</title>
   </head>
   <body>
@@ -24,7 +25,7 @@
     var keyHandler = function(event) {
         console.log('keycode', event.keyCode)
         if (event.keyCode == KeyCode.KEY_BACK || event.keyCode == KeyCode.WINDOW_KEY_BACK) {
-            window.location.href = './menu.html'
+            window.location.href = './html/menu.html'
         }
         event.stopPropagation();
     }

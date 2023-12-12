@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../assets/main.css">
+        <link rel="shortcut icon" href="../public/favicon.ico">
+        <title>ChannelMonGo</title>
+    </head>
+    <body>
+        <div class="item-01-P8y">
+            <div class="thema training"></div>
+            <div class="play_area">
+                <div class="text1"></div>
+                <div class="training_monster"></div>
+            </div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="./KeyCode.js?1"></script>
+<script type="text/javascript" src="./js/index.js?1"></script>
+<script>
+var focIndex = 0
+var maxIndex = 3
+var keyHandler = function(event) {
+    console.log('keycode', event.keyCode)
+    if (event.keyCode == KeyCode.KEY_BACK || event.keyCode == KeyCode.WINDOW_KEY_BACK) {
+        window.location.href = './html/menu.html'
+    }
+    event.stopPropagation();
+}
+window.document.onkeydown = keyHandler
+init(keyHandler)
+
+var count = 0
+setInterval(function() {
+    count += 1
+    if (count % 4 == 0) {
+        document.getElementsByClassName('training_monster')[0].style.backgroundImage = "url('./assets/images/trainingMonster1.png')"
+    } else if (count % 4 == 1){
+        document.getElementsByClassName('training_monster')[0].style.backgroundImage = "url('./assets/images/trainingMonster2.png')"
+    } else if (count % 4 == 2){
+        document.getElementsByClassName('training_monster')[0].style.backgroundImage = "url('./assets/images/trainingMonster3.png')"
+    } else {
+        document.getElementsByClassName('training_monster')[0].style.backgroundImage = "url('./assets/images/trainingMonster4.png')"
+    }
+}, 1000)
+</script>

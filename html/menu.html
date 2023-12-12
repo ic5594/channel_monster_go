@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="shortcut icon" href="../public/favicon.ico">
     <title>ChannelMonGo</title>
   </head>
   <body>
@@ -17,8 +18,8 @@
     </div>
   </body>
 </html>
-<script type="text/javascript" src="./KeyCode.js?1"></script>
-<script type="text/javascript" src="./js/index.js?1"></script>
+<script type="text/javascript" src="../KeyCode.js?1"></script>
+<script type="text/javascript" src="../js/index.js?1"></script>
 <script>
     var focIndex = 0
     var maxIndex = 3
@@ -27,13 +28,13 @@
         if (event.keyCode == KeyCode.KEY_CONFIRM) {
             window.sessionStorage.setItem('menuIndex', focIndex)
             if (focIndex == 0) {
-                window.location.href = './training.html'
+                window.location.href = './html/training.html'
             } else if (focIndex == 1) {
-                window.location.href = './travel.html'
+                window.location.href = './html/travel.html'
             } else if (focIndex == 2) {
-                window.location.href = './battle.html'
+                window.location.href = './html/battle.html'
             } else {
-                window.location.href = './shop.html'
+                window.location.href = './html/shop.html'
             }
         } else if (event.keyCode == KeyCode.KEY_RIGHT) {
             if (focIndex >= maxIndex) { 
