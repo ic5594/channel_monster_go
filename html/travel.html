@@ -12,23 +12,42 @@
         <div class="thema travel"></div>
             <div class="play_area">
                 <div class="text2"></div>
-                <div class="travel_monster"></div>
+                <div class="travel_monster_area">
+                    <div class="travel_monster1"></div>
+                    <div class="travel_monster2"></div>
+                    <div class="travel_monster3"></div>
+                    <div class="travel_monster4"></div>
+                </div>
             </div>
         </div>
     </body>
 </html>
-<script type="text/javascript" src="./KeyCode.js?1"></script>
-<script type="text/javascript" src="./js/index.js?1"></script>
+<script type="text/javascript" src="../KeyCode.js?1"></script>
+<script type="text/javascript" src="../js/index.js?1"></script>
 <script>
-    var focIndex = 0
-    var maxIndex = 3
-    var keyHandler = function(event) {
-        console.log('keycode', event.keyCode)
-        if (event.keyCode == KeyCode.KEY_BACK || event.keyCode == KeyCode.WINDOW_KEY_BACK) {
-            window.location.href = './html/menu.html'
-        }
-        event.stopPropagation();
+var focIndex = 0
+var maxIndex = 3
+var keyHandler = function(event) {
+    console.log('keycode', event.keyCode)
+    if (event.keyCode == KeyCode.KEY_BACK || event.keyCode == KeyCode.WINDOW_KEY_BACK) {
+        window.location.href = './menu.html'
     }
-    window.document.onkeydown = keyHandler
-    init(keyHandler)
+    event.stopPropagation();
+}
+window.document.onkeydown = keyHandler
+init(keyHandler)
+
+var count = 0
+setInterval(function() {
+    count += 1
+
+    for (var a = 1; a <= 5; a++) {
+        if (count % 5 == a) {
+            document.getElementsByClassName('travel_monster' + a)[0].style.display = "block"
+        } else {
+            document.getElementsByClassName('travel_monster' + a)[0].style.display = "none"
+        }
+    }
+    
+}, 1000)
 </script>

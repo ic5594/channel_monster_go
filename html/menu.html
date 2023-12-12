@@ -28,13 +28,13 @@
         if (event.keyCode == KeyCode.KEY_CONFIRM) {
             window.sessionStorage.setItem('menuIndex', focIndex)
             if (focIndex == 0) {
-                window.location.href = './html/training.html'
+                window.location.href = './training.html'
             } else if (focIndex == 1) {
-                window.location.href = './html/travel.html'
+                window.location.href = './travel.html'
             } else if (focIndex == 2) {
-                window.location.href = './html/battle.html'
+                window.location.href = './battle.html'
             } else {
-                window.location.href = './html/shop.html'
+                window.location.href = './shop.html'
             }
         } else if (event.keyCode == KeyCode.KEY_RIGHT) {
             if (focIndex >= maxIndex) { 

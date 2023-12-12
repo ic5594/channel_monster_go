@@ -17,15 +17,15 @@
     </div>
   </body>
 </html>
-<script type="text/javascript" src="./KeyCode.js?1"></script>
-<script type="text/javascript" src="./js/index.js?1"></script>
+<script type="text/javascript" src="../KeyCode.js?1"></script>
+<script type="text/javascript" src="../js/index.js?1"></script>
 <script>
     var focIndex = 0
     var maxIndex = 3
     var keyHandler = function(event) {
         console.log('keycode', event.keyCode)
         if (event.keyCode == KeyCode.KEY_BACK || event.keyCode == KeyCode.WINDOW_KEY_BACK) {
-            window.location.href = './html/menu.html'
+            window.location.href = './menu.html'
         }
         event.stopPropagation();
     }
