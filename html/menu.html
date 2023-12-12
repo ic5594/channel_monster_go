@@ -21,51 +21,55 @@
 <script type="text/javascript" src="../KeyCode.js?1"></script>
 <script type="text/javascript" src="../js/index.js?1"></script>
 <script>
-    var focIndex = 0
-    var maxIndex = 3
+let focIndex = 0
+var maxIndex = 3
 
-    var keyHandler = function(event) {
-        if (event.keyCode == KeyCode.KEY_CONFIRM) {
-            window.sessionStorage.setItem('menuIndex', focIndex)
-            if (focIndex == 0) {
-                window.location.href = './training.html'
-            } else if (focIndex == 1) {
-                window.location.href = './travel.html'
-            } else if (focIndex == 2) {
-                window.location.href = './battle.html'
-            } else {
-                window.location.href = './shop.html'
-            }
-        } else if (event.keyCode == KeyCode.KEY_RIGHT) {
-            if (focIndex >= maxIndex) { 
-                focIndex = maxIndex
-            } else {
-                focIndex++
-            }
-            setFocus(focIndex)
-        } else if (event.keyCode == KeyCode.KEY_LEFT) {
-            if (focIndex <= 0) {
-                focIndex = 0
-            } else {
-                focIndex--
-            } 
-            setFocus(focIndex)
-        }
-        
-        event.stopPropagation();
-    }
-    window.document.onkeydown = keyHandler
-    init(keyHandler)
-
-    var setFocus = function(index) {
-        for(var a = 0; a < 4; a++) {
-            if(index == a) {
-                console.log('@2', index)
-                document.getElementsByClassName('menu_ch' + index)[0].className = 'menu_ch' + a + ' foc'
-            } else {
-                console.log('@1', a)
-                document.getElementsByClassName('menu_ch' + a)[0].className = 'menu_ch' + a
-            }
+var setFocus = function(index) {
+    for(var a = 0; a < 4; a++) {
+        if(index == a) {
+            console.log('@2', index)
+            document.getElementsByClassName('menu_ch' + index)[0].className = 'menu_ch' + a + ' foc'
+        } else {
+            console.log('@1', a)
+            document.getElementsByClassName('menu_ch' + a)[0].className = 'menu_ch' + a
         }
     }
+}
+
+if (window.sessionStorage.getItem('menuIndex')) focIndex = window.sessionStorage.getItem('menuIndex')
+setFocus(focIndex)
+
+var keyHandler = function(event) {
+    if (event.keyCode == KeyCode.KEY_CONFIRM) {
+        window.sessionStorage.setItem('menuIndex', focIndex)
+        if (focIndex == 0) {
+            window.location.href = './training.html'
+        } else if (focIndex == 1) {
+            window.location.href = './travel.html'
+        } else if (focIndex == 2) {
+            window.location.href = './battle.html'
+        } else {
+            window.location.href = './shop.html'
+        }
+    } else if (event.keyCode == KeyCode.KEY_RIGHT) {
+        if (focIndex >= maxIndex) { 
+            focIndex = maxIndex
+        } else {
+            focIndex++
+        }
+        setFocus(focIndex)
+    } else if (event.keyCode == KeyCode.KEY_LEFT) {
+        if (focIndex <= 0) {
+            focIndex = 0
+        } else {
+            focIndex--
+        } 
+        setFocus(focIndex)
+    }
+    
+    event.stopPropagation();
+}
+window.document.onkeydown = keyHandler
+init(keyHandler)
+
 </script>

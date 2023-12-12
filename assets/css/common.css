@@ -1,6 +1,6 @@
 .thema {
   width: 18rem;
-  height: 18rem;
+  height: 16rem;
   display: flex;
   background-size: contain;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@
 }
 
 .thema.training {
-  background-image: url('../images/training.png');
+  background-image: url('../images/training_foc.png');
 }
 
 .thema.travel {
@@ -64,6 +64,7 @@
   background-image: url('../images/shop_foc.png');
 }
 
+/* travel */
 .training_monster {
   width: 100%;
   height: 13rem;
@@ -72,14 +73,50 @@
   background-image: url('../images/trainingMonster1.png');
 }
 
-.travel_monster {
+.travel_monster0{
   width: 100%;
   height: 13rem;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('../images/trainingMonster_left.png');
+  background-image: url('../images/trainingMonster_left1.png');
+  position: relative;
 }
 
+.travel_monster1 {
+  width: 100%;
+  height: 13rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/trainingMonster_left2.png');
+  display: none;
+}
+
+.travel_monster2 {
+  width: 100%;
+  height: 13rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/trainingMonster_left3.png');
+  display: none;
+}
+
+.travel_monster3 {
+  width: 100%;
+  height: 13rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/trainingMonster_left4.png');
+  display: none;
+}
+
+.travel_monster_area{
+  display: flex;
+  width: 13rem;
+  height: 13rem;
+}
+
+
+/* battle */
 .monster_battle{
   width: 100%;
   height: 13rem;
@@ -88,6 +125,26 @@
   background-image: url('../images/monster_fight.png');
 }
 
+.game_bar{
+  width : 100%;
+  height : 50px;
+  background-image: linear-gradient(to right, blue 50%, red 50%);
+  border : 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 15% 15%;
+}
+
+.fight_icon {
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/fight_icon.png');
+}
+
+/* shop */
 .shop_area {
   width: 45rem;
   height: 7rem;
